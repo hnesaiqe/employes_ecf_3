@@ -1,12 +1,12 @@
 function displayContent(content) {
     content.forEach(function (data) {
-        var x = document.getElementById("tdPost");
+        var x = document.getElementById("tdList");
         x.innerHTML +=
             '<tr id="row ' + data.id + ' ">' +
-                '<td id="td">' + data.id + '</td>' +
-                '<td>' + data.name + '</td>' +
-                '<td><button type = "button" class = "btn btn-danger">Delete</button></td > ' +
-                '<td><button type = "button" class = "btn btn-secondary">Voir Plus</button></td >' + 
+                '<th id="td">' + data.name + '</th>' +
+                '<td>' + data.last_name + '</td>' +
+                '<td><button type="button" id="btnDelete" class="btn btn-danger">Delete</button></td > ' +
+                '<td><button type="button" id="btnViewMore" class="btn btn-secondary">View More</button></td >' + 
             '</tr>';
     });
 }
