@@ -1,19 +1,18 @@
 let url = "https://6057e432c3f49200173ad08d.mockapi.io/api/v1/employees/";
  var x = document.getElementById("tdList");
 
-function displayContent(content) {
+function displayContent(data) {
 
-    for(let i =0; i <content.length; i++) {
-        console.log(content[i])
+    for(let i =0; i <data.length; i++) {
+        console.log(data[i])
       
         x.innerHTML +=
-            '<tr id="row ' + content[i].id + ' ">' +
-            '<th id="td">' + content[i].name + '</th>' +
-            '<td>' + content[i].last_name + '</td>' +
+            '<tr id="row ' + data[i].id + ' ">' +
+            '<th id="td">' + data[i].name + '</th>' +
+            '<td>' + data[i].last_name + '</td>' +
             '<td><button type="button" id="btnDelete" class="btn btn-danger">Delete</button></td > ' +
-            '<td><button type="button" id=" viewMore' + content[i].id +'" onclick = btnView(this) name="view" class="viewMore btn btn-secondary">View More</button></td >' +
+            '<td><button type="button" id=" viewMore' + data[i].id +'" onclick = btnView(this) name="view" class="viewMore btn btn-secondary">View More</button></td >' +
             '</tr>';
-           
         };
 }
 
@@ -29,8 +28,11 @@ xhttp.send();
 
 
 function btnView(e) {
-    console.log(e.id)
+    
+    console.log(e.id);
+
     alert(e.id)
+   
 }
 
 
