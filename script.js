@@ -35,8 +35,6 @@ function btnView(ID) {
     alert(ID)
 }
 
-
-
 // Request Delete
 
 function btnDel(ID,e) {
