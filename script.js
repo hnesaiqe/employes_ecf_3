@@ -47,6 +47,23 @@ function btnView(ID) {
 
 }
 
+// Afficher /1 post
+
+
+function content(data) {
+    console.log(data.name)
+    var az = document.getElementById("modalFooter");
+    document.getElementById("modalName").value =  data.name;
+    
+   document.getElementById("modalLastName").value = data.last_name;
+     document.getElementById("modalJobTitle").value = data.job_title;
+   document.getElementById("modalEmail").value = data.email;
+    az.innerHTML += 
+        '<button type="button" class="btn btn-primary" onclick="btnEdit(' + data.id + ')">Save changes</button>';
+
+
+};
+
 // Request Delete
 
 function btnDel(ID, e) {
