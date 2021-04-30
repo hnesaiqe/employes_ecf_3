@@ -16,7 +16,7 @@
   <div class="container">
 
           <!-- Formilaire -->
-    <div class="form bg-light mb-3">
+    <div class="form bg-light mb-3 mt-3 p-3 border border-dark rounded">
 
       <form class="needs-validation" id="myForm" novalidate>
         <div class="form-row">
@@ -38,20 +38,20 @@
         <div class="form-row">
           <div class="col-md-6 mb-3">
             <label for="validationCustom03">Job Title</label>
-            <input type="text" class="form-control" id="newJobTitle" required>
+            <input type="text" class="form-control" id="newJobTitle" required="required">
             <div class="invalid-feedback">
               Please provide a valid city.
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <label for="validationCustom03">Email</label>
-            <input type="email" class="form-control" id="newEmail" required>
+            <input type="email" class="form-control" id="newEmail" placeholder="example@example.com" required>
             <div class="invalid-feedback">
               Please provide a valid city.
             </div>
           </div>
         </div>
-        <button class="btn btn-primary" type="button" onclick="loadDoc()">Submit form</button>
+        <button class="btn btn-primary" type="button" onclick="btnSubmit()">Submit</button>
       </form>
     </div>
 

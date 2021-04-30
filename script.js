@@ -84,7 +84,7 @@ function btnDel(ID, e) {
 }
 // Request Post
 
-function loadDoc() {
+function btnSubmit() {
 
     var name = document.getElementById("newName").value;
     var lastName = document.getElementById("newLastName").value;
