@@ -31,7 +31,7 @@ function displayContent(data) {
 function btnView(ID) {
 
     console.log(ID);
-    document.getElementById("title").innerText = 'id = ' + ID;
+    document.getElementById("title").innerText = ID;
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -109,7 +109,7 @@ function loadDoc() {
     xhttp.open("POST", url, true);
     xhttp.setRequestHeader('Content-Type', 'application/json');
     xhttp.send(JSON.stringify(params));
-    alert("Votre Profil est enregistrer, rafraîchit ta page!!!")
+    alert("Votre Profil est enregistrer!!!")
     document.getElementById('myForm').reset();
     location.reload(2);
 
